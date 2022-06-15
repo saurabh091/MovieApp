@@ -7,12 +7,6 @@
 
 import Foundation
 
-struct Constants {
-    // HTTP constant
-    static let contentType = "Content-Type"
-    static let accept = "Accept"
-}
-
 /// Protocol used for configuration for service request
 protocol Endpoint {
     var httpMethod: ReuestType { get }
@@ -118,7 +112,7 @@ class ServiceRequest {
         let queryString = queryItems(dictionary: endpoint.body ?? [:]).replacingOccurrences(of: "?", with: "&")
         let url = URL(string: endpoint.url + queryString)!
         var urlRequest = URLRequest(url: url)
-        
+        debugPrint("URL ------ \(urlRequest)")
         // Header fields
         endpoint.headers?.forEach({ header in
             urlRequest.setValue(header.value as? String,

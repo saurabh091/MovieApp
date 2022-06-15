@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		20D317CB2859DB7600643CAC /* ServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D317C92859DB7600643CAC /* ServiceRequest.swift */; };
 		20D317CC2859DB7600643CAC /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D317CA2859DB7600643CAC /* Environment.swift */; };
+		20D317CF285A0D2E00643CAC /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D317CD285A0D2E00643CAC /* CollectionReusableView.swift */; };
+		20D317D0285A0D2E00643CAC /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20D317CE285A0D2E00643CAC /* CollectionReusableView.xib */; };
+		20D317D4285A677900643CAC /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D317D2285A677800643CAC /* Spinner.swift */; };
+		20D317D5285A677900643CAC /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D317D3285A677800643CAC /* UIViewController+Extensions.swift */; };
+		20D317D7285A67CC00643CAC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D317D6285A67CC00643CAC /* Constants.swift */; };
 		20E6FDC82858FFFE001A9711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E6FDC72858FFFE001A9711 /* AppDelegate.swift */; };
 		20E6FDCA2858FFFE001A9711 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E6FDC92858FFFE001A9711 /* SceneDelegate.swift */; };
 		20E6FDCC2858FFFE001A9711 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E6FDCB2858FFFE001A9711 /* ViewController.swift */; };
@@ -25,6 +30,11 @@
 		06EBF7135C62EBE9880C3854 /* Pods-MovieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.debug.xcconfig"; path = "Target Support Files/Pods-MovieApp/Pods-MovieApp.debug.xcconfig"; sourceTree = "<group>"; };
 		20D317C92859DB7600643CAC /* ServiceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceRequest.swift; sourceTree = "<group>"; };
 		20D317CA2859DB7600643CAC /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		20D317CD285A0D2E00643CAC /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		20D317CE285A0D2E00643CAC /* CollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
+		20D317D2285A677800643CAC /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		20D317D3285A677800643CAC /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		20D317D6285A67CC00643CAC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		20E6FDC42858FFFE001A9711 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E6FDC72858FFFE001A9711 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20E6FDC92858FFFE001A9711 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +62,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20D317D1285A675000643CAC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				20D317D6285A67CC00643CAC /* Constants.swift */,
+				20D317D2285A677800643CAC /* Spinner.swift */,
+				20D317D3285A677800643CAC /* UIViewController+Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		20E6FDBB2858FFFD001A9711 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +95,7 @@
 			children = (
 				20E6FDC72858FFFE001A9711 /* AppDelegate.swift */,
 				20E6FDC92858FFFE001A9711 /* SceneDelegate.swift */,
+				20D317D1285A675000643CAC /* Utilities */,
 				20E6FDDF2859079E001A9711 /* Models */,
 				20E6FDDE2859075C001A9711 /* ViewModels */,
 				20E6FDDB28590745001A9711 /* Controllers */,
@@ -125,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				20E6FDE8285911E4001A9711 /* MovieCVCell.swift */,
+				20D317CD285A0D2E00643CAC /* CollectionReusableView.swift */,
+				20D317CE285A0D2E00643CAC /* CollectionReusableView.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -207,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E6FDD428590002001A9711 /* LaunchScreen.storyboard in Resources */,
+				20D317D0285A0D2E00643CAC /* CollectionReusableView.xib in Resources */,
 				20E6FDD128590002001A9711 /* Assets.xcassets in Resources */,
 				20E6FDCF2858FFFE001A9711 /* Main.storyboard in Resources */,
 			);
@@ -261,14 +285,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D317CF285A0D2E00643CAC /* CollectionReusableView.swift in Sources */,
 				20D317CB2859DB7600643CAC /* ServiceRequest.swift in Sources */,
 				20E6FDCC2858FFFE001A9711 /* ViewController.swift in Sources */,
 				20E6FDC82858FFFE001A9711 /* AppDelegate.swift in Sources */,
 				20D317CC2859DB7600643CAC /* Environment.swift in Sources */,
 				20E6FDDD28590758001A9711 /* ViewModel.swift in Sources */,
+				20D317D5285A677900643CAC /* UIViewController+Extensions.swift in Sources */,
 				20E6FDCA2858FFFE001A9711 /* SceneDelegate.swift in Sources */,
 				20E6FDE1285907A8001A9711 /* MovieListModel.swift in Sources */,
 				20E6FDE9285911E5001A9711 /* MovieCVCell.swift in Sources */,
+				20D317D4285A677900643CAC /* Spinner.swift in Sources */,
+				20D317D7285A67CC00643CAC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
